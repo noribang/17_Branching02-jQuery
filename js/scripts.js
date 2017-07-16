@@ -3,6 +3,7 @@ $(document).ready(function() {
 		var age = parseInt($('input#age').val());
 		var gender = $('select#gender').val();
 
+		/* Checking for Truthy or Falsey */
 		if(age) {
 			var quote = (100 - age) * 3;
 			if(gender === 'male' && age < 26) {
